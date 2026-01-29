@@ -5,3 +5,5 @@ db.employees.insertOne({name:"Alice Johnson",Department:"Management",Salary : 60
 db.employees.insertMany([{name:"Bob Smith",Department:"IT",Salary:60000,Positon :"Developer",Experience:4},{name:"Charlie",Department:"IT",Salary:72000,Position:"Senior Developer",Experience:7},{name:"Diana Prince",Departmnet:"Marketing",Salary:45000,Position:"Intern",Experience:0}])
 
 db.employees.find()
+
+db.employees.find({salary: { $gt:70000}})
