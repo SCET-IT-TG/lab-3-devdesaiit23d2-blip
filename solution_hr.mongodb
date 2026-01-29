@@ -6,7 +6,7 @@ db.employees.insertMany([{name:"Bob Smith",Department:"IT",Salary:60000,Positon 
 
 db.employees.find()
 
-db.employees.find({salary: { $gt:70000}})
+db.employees.find({Salary: { $gt: 70000} })
 
 db.employees.find({name : "Bob Smith"})
 
